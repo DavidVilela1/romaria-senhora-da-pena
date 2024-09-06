@@ -1,0 +1,306 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+}
+
+.navbar {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* Ajusta o espaçamento vertical da navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    transition: color 0.3s ease;
+    margin-right: auto; /* Move a navbar-brand completamente à esquerda */
+}
+
+.navbar-brand:hover {
+    color: #2e2e2e;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Move os nav-items completamente à direita */
+}
+
+.nav-item {
+    margin-left: 15px; /* Espaçamento entre os itens */
+    transition: transform 0.3s ease;
+}
+
+.nav-item:last-child {
+    margin-right: 0; /* Remove o espaçamento do último nav-item */
+}
+
+.nav-item:hover {
+    transform: translateY(-3px);
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #303030;
+}
+
+/* Home Boas-Vindas */
+.welcome-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #ffb74d; 
+    color: #333; 
+}
+
+.welcome-section h1 {
+    font-weight: bold;
+}
+
+.video-card {
+    background-color: #ffcc80; 
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+#creditos {
+    font-weight: bold;
+    color: #333;
+}
+#creditos:hover {
+    text-decoration: none;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+/* Sobre a Festa */
+#about h2 {
+    color: #343a40;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about p {
+    color: #555;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+}
+
+#about img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin-top: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+}
+
+/* Estilos para a seção de Produtos */
+#products {
+    background-color: #ffb74d; 
+    padding: 60px 0;
+    text-align: center;
+}
+#products h2 {
+    font-weight: bold;
+}
+
+#product1, #product2, #product3 {
+    transition: transform 0.3s ease-in-out;
+    border: none; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: justify;
+}
+
+#product1:hover, #product2:hover, #product3:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+#product1 .card-title, #product2 .card-title, #product3 .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+
+#product1 .card-text, #product2 .card-text, #product3 .card-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #666666; 
+}
+
+#product1 .card-img-top, #product2 .card-img-top, #product3 .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #eeeeee; 
+}
+
+/* Estilo para o cartaz */
+#dates img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo para o calendário */
+.calendar {
+    width: 500px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.calendar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; /* Cor do título */
+}
+.month {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.day {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff; /* Cor de fundo dos dias */
+    color: #495057; /* Cor do texto dos dias */
+    font-weight: bold;
+}
+.day:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+.highlight {
+    background-color: #007bff; /* Cor de destaque */
+    color: #fff; /* Cor do texto em destaque */
+}
+#location {
+    padding: 100px 0;
+    background-color: #ffb74d;
+    color: #333;
+    text-align: center;
+}
+#text-map {
+    margin-top: 150px
+}
+#location h2 {
+    font-weight: bold;
+}
+#map {
+    height: 400px; /* Altura do mapa */
+    width: 100%; /* Largura do mapa */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+/* Footer */
+footer {
+    background-color: #f8f9fa; /* Fundo claro */
+    color: #343a40; /* Texto escuro */
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #343a40;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #6c757d;
+}
+
+footer .fab {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.875rem;
+}
+#products p .mb-0 {
+    margin-top: 10px;
+    align-self: center;
+}
+.author{
+    opacity: 0.5;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: 3px solid rgb(130, 130, 130);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 18px;
+    transition: opacity 0.3s;
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+}
+
+#scrollToTopBtn.show {
+    display: block;
+    animation: fadeIn 0.5s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgb(234, 234, 234);
+}
